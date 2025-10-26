@@ -1,0 +1,10 @@
+راهنمای راه‌اندازی پروژه نوبت‌دهی آنلاین:
+
+1. XAMPP رو نصب کن (اگه نداری).
+2. فایل Clinic_System.zip رو تو Z:\Xampp\htdocs استخراج کن.
+3. Apache و MySQL رو تو XAMPP Control Panel روشن کن.
+4. برو به http://localhost/phpmyadmin.
+5. یه دیتابیس به اسم ClinicDB بساز.
+6. تو تب Import، فایل ClinicDB.sql رو آپلود کن.
+7. تو مرورگر برو به http://localhost/Clinic_System/test_db.php و چک کن داده‌ها نمایش داده می‌شن.
+8. اگه خطای فارسی دیدی، مطمئن شو دیتابیس روی utf8mb4_persian_ci تنظیم شده.
