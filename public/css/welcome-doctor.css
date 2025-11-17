@@ -1,0 +1,128 @@
+/* ---------------- کد اصلی شما بدون تغییر ---------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Vazir", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #e0f2f1, #a5d6a7);
+  transition: opacity 0.4s ease;
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.welcome-container {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.welcome-box {
+  background: rgba(255,255,255,0.92);
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  border-top: 6px solid #2e7d32;
+  backdrop-filter: blur(8px);
+}
+
+.welcome-box h2 {
+  color: #2e7d32;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.back-btn {
+  display: inline-block;
+  background-color: #2e7d32;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #bdc2ca;
+}
+
+
+/* ---------------------- هدر ---------------------- */
+
+.header {
+  width: 100%;
+  background: #2e7d32; /* همان رنگ سبز اصلی */
+  color: #fff;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.header-right .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header-left {
+  display: flex;
+  gap: 15px;
+}
+
+.header-btn {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.25);
+  transition: 0.3s;
+}
+
+.header-btn:hover {
+  background: rgba(255,255,255,0.4);
+}
+
+.reserve {
+  background: rgba(255,255,255,0.4);
+}
+
+.reserve:hover {
+  background: rgba(255,255,255,0.55);
+}
+
+
+/* ---------------------- فوتر ---------------------- */
+
+.footer {
+  width: 100%;
+  background: #1b5e20; /* کمی تیره‌تر برای فوتر */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}

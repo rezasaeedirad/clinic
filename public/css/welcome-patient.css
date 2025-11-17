@@ -1,0 +1,118 @@
+/* ---- کد اصلی شما بدون تغییر ---- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Vazir", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.welcome-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-box {
+  background: rgba(255,255,255,0.92);
+  padding: 40px 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  border-top: 6px solid #1565c0;
+}
+
+h2 {
+  color: #0d47a1;
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+.back-btn {
+  display: inline-block;
+  background-color: #1565c0;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #bfc3ca;
+}
+
+
+/* ---- هدر جدید ---- */
+
+.header {
+  width: 100%;
+  background: #1565c0;
+  color: #fff;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.header-right .title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.header-left {
+  display: flex;
+  gap: 15px;
+}
+
+.header-btn {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.2);
+  transition: 0.3s;
+}
+
+.header-btn:hover {
+  background: rgba(255,255,255,0.35);
+}
+
+.reserve {
+  background: rgba(255,255,255,0.35);
+}
+
+.reserve:hover {
+  background: rgba(255,255,255,0.55);
+}
+
+
+/* ---- فوتر ---- */
+
+.footer {
+  width: 100%;
+  background: #0d47a1;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}

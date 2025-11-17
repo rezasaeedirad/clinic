@@ -1,0 +1,174 @@
+/* ریست و تنظیمات پایه */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Vazir", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  transition: opacity 0.4s ease;
+}
+
+/* انیمیشن fade-in و fade-out */
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+body.fade-out {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* باکس فرم */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-box {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 30px 25px;
+  width: 95%;
+  max-width: 900px;
+  text-align: center;
+  transform: scale(0.97);
+  animation: popIn 0.5s ease forwards;
+}
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.95) translateY(20px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.form-box h2 {
+  color: #1e88e5;
+  margin-bottom: 25px;
+}
+
+/* ردیف‌های افقی */
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+  flex: 1;
+}
+
+/* فیلدهای ورودی، textarea و select */
+input, select, textarea {
+  padding: 12px;
+  border: 1.5px solid #90caf9;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+  text-align: right; /* راست‌چین کردن متن */
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #1e88e5;
+  box-shadow: 0 0 8px rgba(30, 136, 229, 0.4);
+}
+
+/* textarea توضیحات بیماری */
+#diseaseDescription {
+  min-height: 50px;  /* ارتفاع پایه بزرگتر */
+  padding: 12px;
+  border-radius: 8px;
+  border: 1.5px solid #90caf9;
+  resize: vertical; /* امکان تغییر ارتفاع */
+  transition: 0.3s;
+}
+
+/* وقتی فیلد غیر فعال است */
+textarea:disabled {
+  background-color: #f0f4f8;
+  cursor: not-allowed;
+}
+
+/* بخش سابقه بیماری */
+.disease-section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.disease-options label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.disease-options input {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* دکمه ثبت‌نام */
+button {
+  width: 100%;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+button:disabled {
+  background-color: #90caf9;
+  cursor: not-allowed;
+}
+
+/* لینک ورود */
+.form-box p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.form-box a {
+  color: #1e88e5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.form-box a:hover {
+  text-decoration: underline;
+  color: #1565c0;
+}
+
+/* responsive برای موبایل */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+}
