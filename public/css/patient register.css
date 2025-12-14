@@ -1,0 +1,62 @@
+body {
+    font-family: "Vazirmatn", sans-serif;
+    background: #d1f2f0;
+}
+
+.main-header {
+  background: #ffffff;
+  padding: 10px 0;
+}
+
+.main-header .logo {
+    font-size: 1.6rem;
+    color: #0d6efd;
+}
+
+.form-control {
+    border: 2px solid #b3d7ff;
+    transition: 0.3s;
+}
+
+.form-control:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 4px rgba(13,110,253,0.4);
+}
+
+.form-section {
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.form-box {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 25px;
+}
+.history-box {
+    transition: all 0.3s ease;
+}
+
+
+.form-label {
+    font-weight: 600;
+    color: #333;
+}
+
+
+
+.btn-primary {
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1.1rem;
+}
+
+.main-footer {
+        background: #ffffff;
+
+    text-align: center;
+    margin-top: 50px;
+    padding: 15px 0;
+    color: #777;
+    font-size: 0.9rem;
+}

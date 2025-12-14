@@ -1,0 +1,60 @@
+/* doctor-dashboard-simple.css */
+
+/* ریست و فونت */
+* { box-sizing: border-box; }
+body {
+  font-family: "Vazirmatn", sans-serif;
+  background: linear-gradient(180deg,#f4fbff 0%, #ffffff 60%);
+  color: #263238;
+  direction: rtl;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* هدر */
+.main-header {
+  background: #ffffff;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.main-header .logo {
+  font-size: 1.6rem;
+  color: #0b6fd6;
+  font-weight: 700;
+}
+
+/* لیست نوبت‌ها */
+.list-group .list-group-item {
+  border-radius: 12px;
+  margin-bottom: 10px;
+  border: 0;
+  box-shadow: 0 6px 18px rgba(11,111,214,0.04);
+  background: linear-gradient(180deg,#ffffff,#fbfdff);
+  padding: 12px 16px;
+}
+
+.list-group-item .fw-bold {
+  color: #0b6fd6;
+}
+
+/* دکمه‌ها در نوبت‌ها */
+.list-group-item .btn {
+  font-size: 0.9rem;
+}
+
+/* فوتر */
+.main-footer {
+  background: #ffffff;
+  text-align: center;
+  padding: 14px 0;
+  color: #607080;
+  border-top: 1px solid rgba(0,0,0,0.04);
+  position: relative;
+  z-index: 1;
+}
+
+/* responsive tweaks */
+@media (max-width: 992px) {
+  .list-group .list-group-item { font-size: 0.95rem; }
+}

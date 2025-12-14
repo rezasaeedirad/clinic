@@ -1,0 +1,51 @@
+/* ریست پایه */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Vazirmatn", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #d1f2f0, #ffffff);
+  min-height: 100vh;
+}
+
+/* هدر */
+.main-header {
+  background: #ffffff;
+  padding: 10px 0;
+}
+
+.main-header .logo {
+  font-size: 1.5rem;
+  color: #0077ff;
+}
+
+/* فوتر */
+.main-footer {
+  background: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* فرم */
+.card {
+  border-radius: 20px;
+}
+
+.form-control,
+.form-select {
+  border-radius: 10px !important;
+  border: 1.5px solid #2e7d32 !important;
+}
+
+.input-group-text {
+  cursor: pointer;
+  background: #fff;
+  border: 1.5px solid #2e7d32;
+  border-left: 0;
+}

@@ -1,0 +1,92 @@
+/* patient-dashboard.css
+   سبک ساده داشبورد بیمار با تمرکز روی پروفایل و نوبت‌ها
+*/
+
+/* ریست کوچک */
+* { box-sizing: border-box; }
+body {
+  font-family: "Vazirmatn", sans-serif;
+  background: linear-gradient(180deg,#f4fbff 0%, #ffffff 60%);
+  direction: rtl;
+  color: #263238;
+  min-height: 100vh;
+  padding-bottom: 40px;
+}
+
+/* هدر */
+.main-header {
+  background: #ffffff;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.main-header .logo {
+  font-size: 1.6rem;
+  color: #0b6fd6;
+  font-weight: 700;
+}
+
+/* کارت‌ها */
+.card {
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(11,111,214,0.04);
+  background: linear-gradient(180deg,#ffffff,#fbfdff);
+}
+
+/* ستون پروفایل بیمار */
+.avatar-sm, .avatar-md, .avatar-lg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(180deg,#eef7ff,#ffffff);
+  border: 1px solid rgba(11,111,214,0.06);
+}
+
+.avatar-sm { width: 56px; height: 56px; }
+.avatar-md { width: 70px; height: 70px; border-width: 2px; }
+.avatar-lg { width: 96px; height: 96px; border-width: 2px; }
+
+/* پروفایل بیمار */
+#patientProfile .fw-bold { font-size: 1.1rem; }
+#patientProfile .text-muted { font-size: 0.85rem; }
+
+/* لیست نوبت‌ها */
+.list-group .list-group-item {
+  border-radius: 12px;
+  margin-bottom: 10px;
+  border: 0;
+  box-shadow: 0 6px 18px rgba(11,111,214,0.04);
+  background: linear-gradient(180deg,#ffffff,#fbfdff);
+  padding: 10px 15px;
+  font-size: 0.95rem;
+}
+
+/* رنگ متن زمان/ساعت */
+.app-time { color: #0b6fd6; font-weight: 600; }
+
+/* دکمه‌ها */
+.btn-primary { background: #0b6fd6; border-color: #0b6fd6; color: #fff; }
+.btn-primary:hover { background: #0951a0; border-color: #0951a0; }
+
+.btn-outline-primary {
+  color: #0b6fd6;
+  border-color: #0b6fd6;
+}
+.btn-outline-primary:hover { background: rgba(11,111,214,0.06); }
+
+/* مودال‌ها */
+.modal .modal-content { border-radius: 12px; }
+
+/* فوتر */
+.main-footer {
+  background: #ffffff;
+  text-align: center;
+  padding: 14px 0;
+  color: #607080;
+  border-top: 1px solid rgba(0,0,0,0.04);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  #patientProfile { flex-direction: column; align-items: flex-start; gap: 8px; }
+}

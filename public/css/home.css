@@ -1,0 +1,84 @@
+/* ----------------------------- */
+/*       تنظیمات عمومی            */
+/* ----------------------------- */
+
+body {
+    font-family: "Vazirmatn", sans-serif;
+    background: #f7f9fc;
+    color: #333;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ----------------------------- */
+/*              HEADER           */
+/* ----------------------------- */
+
+.main-header {
+    background: #ffffff;
+    padding: 10px 0;
+}
+
+.main-header .logo {
+    font-size: 1.5rem;
+    color: #0077ff;
+}
+
+/* ----------------------------- */
+/*              HERO             */
+/* ----------------------------- */
+
+.hero {
+    padding: 80px 0;
+    background: #e0f0ff;
+    border-radius: 15px;
+}
+
+.hero .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero .subtitle {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* ----------------------------- */
+/*           STEPS CARDS         */
+/* ----------------------------- */
+
+.steps-section .section-title {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.step-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    transition: all 0.3s;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    background: #d6ecff;
+}
+
+/* ----------------------------- */
+/*            FOOTER             */
+/* ----------------------------- */
+
+.main-footer {
+    background: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #777;
+}
